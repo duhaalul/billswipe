@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" width="100%" height="150">
+  <defs>
+    <!-- Gradient untuk elemen teknologi/Host -->
+    <linearGradient id="hostBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6366F1;stop-opacity:1" />
+    </linearGradient>
+    <!-- Gradient untuk elemen sosial/Guest (Swipe action) -->
+    <linearGradient id="guestCoral" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F43F5E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FB923C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ikon Logo -->
+  <g transform="translate(30, 25)">
+    <!-- Bagian atas struk (statis) -->
+    <path d="M10 0 h50 a10 10 0 0 1 10 10 v45 l-70 -15 v-30 a10 10 0 0 1 10 -10 z" fill="url(#hostBlue)" />
+    <!-- Bagian bawah struk (tergeser/swipe ke kanan) -->
+    <path d="M30 65 l70 15 v10 a10 10 0 0 1 -10 10 h-50 a10 10 0 0 1 -10 -10 v-25 z" fill="url(#guestCoral)" />
+    <!-- Detail zigzag khas struk kasir di bagian bawah -->
+    <path d="M30 100 l 12.5 10 l 12.5 -10 l 12.5 10 l 12.5 -10 v-10 h-50 z" fill="url(#guestCoral)"/>
+    <!-- Titik/Garis representasi teks OCR -->
+    <rect x="25" y="15" width="25" height="4" rx="2" fill="#ffffff" opacity="0.8"/>
+    <rect x="25" y="27" width="15" height="4" rx="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+
+  <!-- Tipografi -->
+  <text x="140" y="95" font-family="-apple-system, BlinkMacSystemFont, 'Montserrat', 'Poppins', sans-serif" font-weight="800" font-size="64" fill="#0F172A" letter-spacing="-1.5">Bill<tspan fill="url(#hostBlue)">Swipe</tspan></text>
+</svg>
